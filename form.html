@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Introduciton to Form Controls</title>
+    </head>
+
+    <body>
+        <!--Form Start-->
+        <form>
+            <!--Input Controls Start-->
+            Name*:<input type="text" name="txtTextBox"  placeholder="Please Enter your Name" required size="40" maxlength="10"  /><br />
+            Password:<input type="password" name="txtPassword"  /><br />
+            Email*:<input tpye="email" name="txtEmail" required /><br />
+            Phone*#<input type="tel" name="txtTelephone" required /><br />
+            Fee Amount<input type="number" name="txtFeeAmount"  value="10000" disabled /> <br />
+            DoB:<input type="date" name="txtDoB" readonly /><br />
+            Time:<input type="time" name="txtTime" /><br />
+            Color:<input type="color" name="txtColor" /><br />
+            <!--Input Control End-->
+
+            <!--Checkbox & Radio Control Start-->
+            
+            Are you Married?<input type="checkbox" name="cbMarried" /><br />
+
+            Which Game Do you Like?
+            <input type="radio" value="Cricket" name="rdGame" />Cricket
+            <input type="radio" value="football" name="rdGame" />football
+            <input type="radio" value="basketball" name="rdGame" />basketball
+            <input type="radio" value="none" name="rdGame" />none<br />
+
+            <!--Checkbox & Radio Control End-->
+
+
+            <!--Select Control Start-->
+
+            <select name="selCountry" multiple>
+                <option value="PK">Pakistan</option>
+                <option value="CN">China</option>
+                <option value="UAE">UAE</option>
+                <option value="USA">U.S.A</option>
+                <option value="UK">U.K</option>
+            </select>
+            <br />
+            <!--Select Control End-->
+
+            <!--TextArea Control Start-->
+
+            <textarea name="taInfo" rows="10" cols="50"></textarea> <br />
+            <!--TextArea Control End-->
+
+            <!--Button Control Start-->
+            <button>Submit</button>
+            <input type="reset" value="Clear" />
+            <input type="submit" value="Save" name="btnSubmit" />
+            <!--Button Control End-->
+        </form>
+        <!--Form End-->
+    </body>
+</html>
