@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>CSS Part-2</title>
+
+        <style>
+            .left,.right{
+                border:1px solid black;
+                font-family:arial;
+                
+                width:49%;
+                text-align:justify;
+                margin-top:100px;
+                height:270px;
+                
+            }
+            .left p, .right p{
+                font-size:14px;
+                padding-left:5px;
+                padding-right:5px;
+                
+            }
+
+            .left h1,.right h1{
+                padding-left:5px;
+                padding-right:5px;
+            }
+
+            .left{
+                float:left;
+                word-spacing:5px;
+                
+            }
+
+            .right{
+                float:right;
+                letter-spacing:3px;
+                text-indent: 30px;
+            }
+
+            #menu li a{
+                text-decoration:none;
+                color:black;
+                margin-right:10px;
+                text-transform:uppercase;
+                font-family:arial;
+                font-size:12px;
+            }
+
+            #menu li a:hover{
+                color:red;
+            }
+
+            #menu li{
+                list-style-type:none;
+                display:table-cell;
+                
+            }
+
+            
+            
+            .image{
+                width:450px;
+                height:250px;
+            }
+
+            .overflow {
+            background-color: #f5f2f0;
+            width: 50%;
+            height: 20%;
+            overflow: scroll;
+          }
+        </style>
+    </head>
+
+    <body>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="right">
+            <h1>What is Lorem Ipsum?</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="left">
+            <h1>Why do we use it?</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+
+        <div class="overflow">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
+
+        <!--img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Faisal_Masjid_on_27th_Ramadan.jpg/1920px-Faisal_Masjid_on_27th_Ramadan.jpg" /-->
+    </body>
+</html>
