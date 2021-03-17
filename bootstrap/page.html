@@ -6,13 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/65d032f0f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
 
     <style>
+    body{
+      font-family: 'Roboto', sans-serif !important;
+    }
+    .form-control:focus{
+      border-color:#9b59b6 !important;
+      box-shadow:0 0 0 .25rem  rgba(155, 89, 182,.25);
+    }
+    .btn-primary {
+    color: #fff;
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    }
+    .btn-primary:hover {
+    color: #fff;
+    background-color: #27ae60;
+    border-color: #2ecc71;
+    }
+
+    .btn-danger {
+    color: #fff;
+    background-color: #e67e22;
+    border-color: #d35400;
+    }
+
+    .btn-danger:hover {
+    color: #fff;
+    background-color: #d35400;
+    border-color:#e67e22;
+    }
     .bg-light{
         background-color: #8e44ad !important;
+    }
+    .fas,.fab{
+      color:#9b59b6;
     }
     .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
         color:white !important;
@@ -28,7 +63,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Afzal's Personal Site </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,22 +75,22 @@
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About US</a>
+                <a class="nav-link" href="#about-us">About US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Services</a>
+                <a class="nav-link" href="#our-services">Our Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Work</a>
+                <a class="nav-link" href="#our-work">Our Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Follow US</a>
+                <a class="nav-link" href="#follow-us">Follow US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact US</a>
+                <a class="nav-link" href="#contact-us">Contact US</a>
               </li>
             </ul>
           </div>
@@ -88,7 +123,7 @@
 
 
         <!--Features Start -->
-        <div class="row mt-5">
+        <div class="row mt-5" id="features">
             <div class="col-12 text-center">
                 <h3>We Provide 100% Quality Work</h3>
             </div>
@@ -120,7 +155,7 @@
 
         <!--About US Start-->
 
-        <div class="row mt-5">
+        <div class="row mt-5" id="about-us">
             <div class="col-12 text-center">
                 <h3>Our History Represent Our Dignity.</h3>
             </div>
@@ -158,7 +193,7 @@
         <!--About US End-->
 
         <!--Our Services Start-->
-        <div class="row mt-5">
+        <div class="row mt-5" id="our-services">
           <div class="col-12 text-center">
               <h3>We Provide a bundle of Services.</h3>
           </div>
@@ -210,7 +245,7 @@
         <!--Our Services End-->
 
         <!--Our Work Start-->
-        <div class="row mt-5">
+        <div class="row mt-5" id="our-work">
           <div class="col-12 text-center">
               <h3>Our Work Samples that belongs to our different Clients.</h3>
           </div>
@@ -259,7 +294,7 @@
         <!--Our Work End-->
 
         <!--Follow Us Start-->
-        <div class="row mt-5">
+        <div class="row mt-5" id="follow-us">
           <div class="col-12 text-center">
               <h3>We are Waiting for your Review.</h3>
           </div>
@@ -289,7 +324,7 @@
         <!--Follow Us End-->
         
         <!--Contact us Start-->
-        <div class="row mt-5">
+        <div class="row mt-5" id="contact-us">
           <div class="col-12 text-center">
               <h3>Any Query? Just Fill the Form and we will be at your Service.</h3>
           </div>
@@ -326,17 +361,76 @@
             <div class="col-1">
               <input type="reset" class="btn btn-danger btn-lg" value="Clear" />
             </div>
-            <div class="col-1 ">
+            <div class="col-1">
               <input type="submit" class="btn btn-primary btn-lg" value="Send" />
             </div>
           </div>
         </form>
         <!--Contact us End-->
 
+        <!--Google Map Start-->
+        <div class="row mt-5 mb-5">
+          <div class="col-6">
+            <div class="row justify-content-center mb-2">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10 text-center">
+                <input type="text" name="txtName" placeholder="Please Enter Your Name" class="form-control form-control-lg" required />
+              </div>
+          </div>
+            <div class="row justify-content-center mb-2 mt-2">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10 text-center">
+                <input type="text" name="txtSubject" placeholder="Please Enter Subject" class="form-control form-control-lg" required />
+              </div>
+            </div>
+            <div class="row justify-content-center mb-2 mt-2">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10 text-center">
+                <input type="text" name="txtEmail" placeholder="Please Enter Email" class="form-control form-control-lg" required />
+              </div>
+            </div>
+            <div class="row justify-content-center mb-2 mt-2">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10 text-center">
+                <textarea class="form-control" name="txtMessage" style="height:150px" >Please Enter Your Message</textarea>
+              </div>
+            </div>
+            <div class="row justify-content-center  mt-2">
+              <div class="col-2">
+                <input type="reset" class="btn btn-danger btn-lg" value="Clear" />
+              </div>
+              <div class="col-2">
+                <input type="submit" class="btn btn-primary btn-lg" value="Send" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.7011715978633!2d72.94469451489056!3d33.8200239373798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfba61e893389f%3A0x5f14368d682cfeb0!2sMabali%20Island!5e0!3m2!1sen!2s!4v1615958320014!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <!--Google Map End-->
+
+        <!--Footer Start-->
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3 text-center border-end">
+            <i class="fas fa-phone-square-alt fa-3x"></i>
+            <p>+92-321-1234567</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3 text-center border-end">
+            <i class="fas fa-envelope fa-3x"></i>
+            <p>info@e-rozgaar.gov.pk</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3 text-center">
+            <i class="fas fa-compass fa-3x"></i>
+            <p>Arfa Software Technology Park <br />Lahore Pakistan</p>
+          </div>
+        </div>
+        <div class="row justify-content-center bg-light" style="height:50px;color:white;">
+          <div class="col-12 text-center" style="padding-top: 16px;">
+            <p>Copyright &copy; 2021 E-Rozgaar</p>
+          </div>
+        </div>
+        <!--Footer End-->
     </div>
     
     
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></!--script-->
   </body>
 </html>
